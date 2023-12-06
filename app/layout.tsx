@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import './layout.css';
 
 export const metadata: Metadata = {
     title: "Learning nextjs",
@@ -10,7 +11,7 @@ export default function RootLayout({
 }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-          <body>{children}</body>
+          <body className='root'>{children}</body>
         </html>
       );
 }
